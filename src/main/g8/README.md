@@ -1,10 +1,4 @@
 
-[comment]: # (Start Badges)
-
-
-
-[comment]: # (End Badges)
-
 # $name$
 
 $projectDescription$

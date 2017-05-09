@@ -14,12 +14,14 @@ sbt new frees-io/freestyle-template.g8
 
 ...
 
-name [Project Name]: Test
-projectDescription [Project Description]:
-project [project-name]: freestyle-new-project
+name [Project Name]: freestyle-rpc
+projectDescription [Project Description]: RPC with Freestyle
+project [project-name]: freestyle-rpc
 package [freestyle]:
+Skipping existing file: ./freestyle-rpc/.gitignore
+Skipping existing file: ./freestyle-rpc/.scalafmt.conf
 
-Template applied in ./test
+Template applied in ./freestyle-rpc
 ```
 
 The new project will be created in the `test` folder, with the basic structure and basic sbt configuration based on the `sbt-freestyle` and `sbt-org-policies` plugins.
@@ -28,6 +30,12 @@ The new project will be created in the `test` folder, with the basic structure a
 
 ```scala
 sbt orgCreateFiles
+```
+
+4. Verify that everything is correctly configured:
+
+```scala
+sbt orgScriptCI
 ```
 
 Template license
