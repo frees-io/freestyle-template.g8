@@ -8,14 +8,15 @@ lazy val root = project
   .settings(moduleName := "root")
   .settings(noPublishSettings: _*)
   .settings(scalaMetaSettings: _*)
+  .settings(libraryDependencies ++= commonDeps ++ freestyleCoreDeps())
   .aggregate(`$project$JS`, `$project$JVM`)
 
 lazy val `$project$` = crossProject
   .in(file("$project$"))
   .settings(moduleName := "$project$")
   .settings(scalaMetaSettings: _*)
-  .jsSettings(sharedJsSettings: _*)
   .crossDepSettings(commonDeps ++ freestyleCoreDeps(): _*)
+  .jsSettings(sharedJsSettings: _*)
 
 lazy val `$project$JVM` = `$project$`.jvm
 lazy val `$project$JS` = `$project$`.js
