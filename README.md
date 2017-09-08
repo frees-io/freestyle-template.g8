@@ -24,7 +24,7 @@ Skipping existing file: ./freestyle-rpc/.scalafmt.conf
 Template applied in ./freestyle-rpc
 ```
 
-The new project will be created in the `test` folder, with the basic structure and basic sbt configuration based on the `sbt-freestyle` and `sbt-org-policies` plugins.
+The new project will be created in a new folder in the root directoy of this project with the name introduced before. It will contain the basic structure and basic sbt configuration based on the `sbt-freestyle` and `sbt-org-policies` plugins.
 
 3. Create the organization files, to do so, from the project folder, you could just run:
 
