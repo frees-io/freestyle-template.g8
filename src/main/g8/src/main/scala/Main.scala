@@ -9,8 +9,8 @@ import scala.concurrent.duration._
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Await
 
-import algebra._
-import algebra.implicits._
+import $package$.algebra._
+import $package$.algebra.implicits._
 
 object Main extends App {
 
@@ -19,4 +19,3 @@ object Main extends App {
 
   println(Await.result(program[AlgebraM.Op].interpret[Future], Duration.Inf))
 }
-
