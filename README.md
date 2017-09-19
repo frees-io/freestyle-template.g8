@@ -38,6 +38,15 @@ sbt orgCreateFiles
 sbt orgScriptCI
 ```
 
+## Debugging this template
+
+In the case you need to change this plugin, the easiest way to test it locally is:
+
+```
+sbt new file:///the/path/to/freestyle-template.g8
+```
+
+
 Template license
 ----------------
 Written in 2017 by 47 Degrees
